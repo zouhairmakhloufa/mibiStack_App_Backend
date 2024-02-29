@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const lieuTouristiqueSchema = mongoose.Schema(
+const QestionSchema = mongoose.Schema(
   {
     name: String,
     address:String,
@@ -9,8 +9,8 @@ const lieuTouristiqueSchema = mongoose.Schema(
   }
 );
 
-const LieuTouristique = mongoose.model("lieuTouristique", lieuTouristiqueSchema);
-module.exports = LieuTouristique;
+const Qestion = mongoose.model("Qestion", QestionSchema);
+module.exports = Qestion;
 
 
 

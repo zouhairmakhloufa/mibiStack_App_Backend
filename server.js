@@ -4,18 +4,13 @@ const bodyParser = require('body-parser');
 const path = require('path')
 
 // require("dotenv").config();
-mongoose.connect('mongodb://127.0.0.1/visitTunisie', {
+mongoose.connect('mongodb://127.0.0.1/mobiStack', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 
 const app = express();
-
-
-
-
-
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
