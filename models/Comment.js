@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const commentSchema = new Schema(
   {
-    id_lieu: { type: String , ref:"lieuTouristique"},
+    id_qest: { type: String , ref:"qestion"},
     id_user: { type: String, ref:"User"},
     comment: { type: String, required:true },
   },

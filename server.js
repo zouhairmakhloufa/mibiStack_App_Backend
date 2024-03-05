@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/user",  require("./routes/UserRoutes"));
-app.use("/lieu",  require("./routes/LieuRoutes"));
+app.use("/qest",  require("./routes/QestionRoutes"));
 app.use("/comment",  require("./routes/Comment"));
 
 

@@ -11,8 +11,8 @@ router.route("/post").post((req, res) => {
   });
 });
 
-router.route("/get_by_lieu/:id").get((req, res) => {
-  Comment.find({ id_lieu: req.params.id })
+router.route("/get_by_qest/:id").get((req, res) => {
+  Comment.find({ id_qest: req.params.id })
     .populate("id_user")
     .then((findedObject) => {
       res.status(200).json({
